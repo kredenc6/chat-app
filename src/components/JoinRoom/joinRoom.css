@@ -1,0 +1,104 @@
+:root {
+  --icon-width: 1rem;
+}
+
+#joinRoom {
+  margin-top: 20vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#issueMsg {
+  margin-bottom: 1rem;
+}
+
+#joinForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid rgba(31, 157, 189, 0.2);
+}
+
+#validationMsg {
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.joinRoomInput {
+  margin: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px dotted #000;
+}
+
+.rightArrow {
+  width: calc(var(--icon-width) * 0.7);
+  height: calc(var(--icon-width) * 0.7);
+  fill: rgb(80, 80, 80);
+  transition: all .5s;
+}
+
+.crossIcon, .checkIcon, .rightArrow , .lds-facebook {
+  vertical-align: middle;
+}
+
+.crossIcon {
+  width: calc(var(--icon-width) * 0.9);
+  height: calc(var(--icon-width) * 0.9);
+}
+
+.checkIcon {
+  width: var(--icon-width);
+  height: var(--icon-width);
+}
+
+  #joinRoom button {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+    #joinRoom button:hover {
+      background-color: rgb(73, 159, 209);
+    }
+
+
+/* spinner */
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: var(--icon-width);
+  height: var(--icon-width);
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: calc(var(--icon-width) * 0.1);
+  width: calc(var(--icon-width) / 5);
+  background: rgb(73, 159, 209);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left:calc(var(--icon-width) * 0.1);
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: calc(var(--icon-width) / 2.5);
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: calc(var(--icon-width) / 1.43);
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: calc(var(--icon-width) * 0.1);
+    height: calc(var(--icon-width) / 1.25);
+  }
+  50%, 100% {
+    top: calc(var(--icon-width) / 3.33);
+    height: calc(var(--icon-width) / 2.5);
+  }
+}
