@@ -19,6 +19,7 @@ const Credential = ({ inputValue, inputName, handleFocus, handleBlur, dispatch }
       placeholder={ inputName }
       pattern="[_a-zA-Z0-9]{3,10}"
       spellCheck="false"
+      autoComplete="off"
       required
       onChange={ (e) => dispatch(
         {

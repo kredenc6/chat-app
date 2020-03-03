@@ -3,7 +3,7 @@ import './App.css';
 import { createSocket } from "./createSocket";
 import JoinRoom from "./components/JoinRoom/JoinRoom";
 import ChatRoom from "./components/Chat/ChatRoom";
-const SERVER_URL = "http://localhost:8889";
+const SERVER_URL = "https://kredenc6-simple-chat-app.herokuapp.com/";
 const VERIFICATION_DELAY = 2000;
 
 interface Action {

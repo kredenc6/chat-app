@@ -1,9 +1,11 @@
 # CHAT-APP
  Created with Typescript, ReactJS and Socket.IO.
 
- To be functional you need to run chat-app-server.
+ To be functional you need to run [chat-app-server](https://github.com/kredenc6/chat-app-server).
 
  
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
