@@ -1,4 +1,5 @@
 # CHAT-APP
+
  Created with Typescript, ReactJS and Socket.IO.
 
  To be functional you need to run [chat-app-server](https://github.com/kredenc6/chat-app-server).

@@ -12,19 +12,8 @@ interface Props {
 
 const INACTIVITY_TIME = 3000;
 
-const PLACEHOLDER_MSGS: MessageInfo[] = [
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"},
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"},
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"},
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"},
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"},
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"},
-  { fromUser: "placeHolder", text: "lorem ipsum... etc"}
-];
-
 const ChatRoom = ({ userName, roomName, socket }: Props) => {
-  // const [messages, setMessages] = useState<MessageInfo[]>([]);
-  const [messages, setMessages] = useState<MessageInfo[]>(PLACEHOLDER_MSGS);
+  const [messages, setMessages] = useState<MessageInfo[]>([]);
   const [isUserIdle, setIsUserIdle] = useState(true);
   const [timeoutID, setTimeoutID] = useState(-1);
 
